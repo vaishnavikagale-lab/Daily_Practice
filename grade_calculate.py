@@ -8,7 +8,7 @@ def calculateGrade(score):
     elif score >= 70:
         return "C"
     elif score >= 60:
-        return "D"
+        return "D"                                          
     else:
         return "F"
 score = int(input("Enter the score: "))
