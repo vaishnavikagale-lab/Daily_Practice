@@ -1,7 +1,12 @@
-s = input()
-t = input()
+def areAnagrams(s1, s2):
+    if sorted(s1.lower()) == sorted(s2.lower()):
+        return True
+    else:
+        return False
+s1 = input()
+s2 = input()
 
-if sorted(s) == sorted(t):
-    print(True)
+if areAnagrams(s1,s2):
+    print("Anagram")
 else:
-    print(False)
+    print("Not anagrams")
