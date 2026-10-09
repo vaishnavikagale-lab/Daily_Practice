@@ -7,3 +7,5 @@ def number_to_zero(num):
             num = num - 1
         steps = steps + 1
         return steps
+num = int(input("Enter the number:"))
+print(number_to_zero(num))
