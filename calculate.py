@@ -19,3 +19,7 @@ def calculate(a: int, b: int, op: str):
         return a % b
     elif op == "**":
         return a ** b
+a = int(input("Enter the number: "))
+b = int(input("Enter the number: "))
+op = str(input("Enter your operator:"))
+print(calculate(a, b, op))
