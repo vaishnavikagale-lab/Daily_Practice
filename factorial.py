@@ -1,7 +1,7 @@
 def factorial(n):
-    result = 1
-    for i in range(1, n + 1):
-        result = result * i
-    return result
-n = int(input("Enter the number:"))
-print(factorial(n))
+    fact = 1
+    for i in range(1,n + 1):
+        fact = fact * i
+    return fact
+n = int(input("Enter the number : "))
+print("Factorial = ",factorial(n))

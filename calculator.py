@@ -1,36 +1,33 @@
-while True:
-    print("\nCalculator")
-    print("1. Add")
-    print("2. Sub")
-    print("3. Mul")
-    print("4. Div")
-    print("5. fact")
-    print("6. Exit")
-    select = input("Enter your choice:")
-    if select == "1":
-        a = int(input("Enter first number: "))
-        b = int(input("Enter second number: "))
-        print("Addition = ",a + b)
-    elif select == "2":
-         a = int(input("Enter first number: "))
-         b = int(input("Enter second number: "))
-         print("Subtraction = ",a - b)
-    elif select == "3":
-         a = int(input("Enter first number: "))
-         b = int(input("Enter second number: "))
-         print("Multiplication = ",a * b)
-    elif select == "4":
-          a = int(input("Enter first number: "))
-          b = int(input("Enter second number: "))
-          print("Division = ",a / b)
-    elif select == "5":
-         num = int(input("Enter the number :"))
-         fact = 1
-         for i in range(1,num + 1):
-              fact = fact * i
-              print("Factorial = ",fact)
-    elif select == "6":
-         print("Program terminated.")
-         break
-    else:
-         print("Invalid choice.")
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def mul(a,b):
+    return a*b
+def div(a,b):
+    return a/b
+
+a = int(input("Enter the first number : "))
+b = int(input("Enter the second number : "))
+
+print("1.Addition")
+print("2.Subtraction")
+print("3.Multiplication")
+print("4.Division")
+print("5.Exit")
+
+ch = int(input("Enter your choice : "))
+
+if ch == 1:
+    print("Addition = ",add(a,b))
+elif ch == 2:
+    print("Subtraction = ",sub(a,b))
+elif ch == 3:
+    print("Multiplication = ",mul(a,b))
+elif ch == 4:
+    print("Division = ",div(a,b))
+elif ch == 5:
+    print("Program terminated")
+else:
+    print("Invalid choice")
+
